@@ -17,7 +17,6 @@ module.exports = function (options /*, webpack*/) {
     ],
     resolve: {
       alias: {
-        '@': path.resolve(__dirname, 'src'),
         '@app': joinSrc('application'),
         '@mod': joinSrc('modules'),
       },
