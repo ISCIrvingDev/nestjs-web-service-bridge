@@ -1,5 +1,8 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 const nodeExternals = require('webpack-node-externals');
+const path = require('path');
+
+const joinSrc = (s) => path.resolve(__dirname, 'src', s);
 
 /**
  * @param {Object} options The default webpack configuration
