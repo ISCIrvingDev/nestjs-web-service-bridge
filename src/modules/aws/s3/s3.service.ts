@@ -1,7 +1,7 @@
 import { Inject, Injectable } from '@nestjs/common';
 import { GetObjectCommand, S3Client } from '@aws-sdk/client-s3';
 import { getSignedUrl } from '@aws-sdk/s3-request-presigner';
-import { S3ClientProviderToken } from './s3-client.provider';
+import { S3ClientProviderToken } from './providers/s3-client.provider';
 import { GetCvFaceParameters } from './s3.service.function-parameters';
 
 @Injectable()

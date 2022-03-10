@@ -5,5 +5,5 @@ export const S3ClientProviderToken = 'S3ClientProvider';
 
 export const S3ClientProvider: ValueProvider = {
   provide: S3ClientProviderToken,
-  useValue: new S3Client({ region: 'us-west-1' }),
+  useValue: new S3Client({ region: process.env.AWS_REGION }),
 };
